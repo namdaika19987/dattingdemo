@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="10"
+    android:background="#ffff"
+    tools:context=".Users.Height_Activity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:background="#4a40ff"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:weightSum="5">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="#4a40ff"
+            android:gravity="center_vertical">
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:id="@+id/exit"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/exit_4" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:gravity="center">
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:id="@+id/image_chieucao"
+                android:layout_width="@dimen/_80sdp"
+                android:layout_height="@dimen/_80sdp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/hutthuoc1" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Hút thuốc"
+                android:textColor="#ffff"
+                android:textSize="@dimen/_20sdp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:orientation="vertical"
+        android:weightSum="3">
+        <RadioGroup
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical"
+            android:weightSum="5"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <RadioButton
+                android:textSize="@dimen/_14sdp"
+                android:layout_weight="1"
+                android:text="Tôi thích hút thuốc"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"/>
+            <RadioButton
+                android:textSize="@dimen/_14sdp"
+                android:layout_weight="1"
+                android:text="Tôi thương xuyên hút thuốc"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"/>
+            <RadioButton
+                android:textSize="@dimen/_14sdp"
+                android:layout_weight="1"
+                android:text="Tôi không thích hút thuốc"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"/>
+            <RadioButton
+                android:textSize="@dimen/_14sdp"
+                android:layout_weight="1"
+                android:text="Thi thoảng hút thuốc"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"/>
+            <RadioButton
+                android:textSize="@dimen/_14sdp"
+                android:layout_weight="1"
+                android:text="Không hiển thị"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"/>
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <com.makeramen.roundedimageview.RoundedImageView
+
+            android:src="@drawable/save1"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+    <RelativeLayout
+
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <TextView
+            android:gravity="center"
+            android:textSize="@dimen/_14sdp"
+            android:layout_marginBottom="@dimen/_20sdp"
+            android:layout_alignParentBottom="true"
+            android:text="Bỏ qua"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+
+
+</LinearLayout>

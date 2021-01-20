@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="#ffff"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:weightSum="10">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:weightSum="10">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/quaylai" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="8"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Chọn lọc"
+                android:textColor="#000000"
+                android:textSize="24sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#000000" />
+
+    <LinearLayout
+        android:layout_marginLeft="@dimen/_5sdp"
+        android:layout_marginRight="@dimen/_5sdp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_gravity="center_horizontal"
+            android:paddingTop="@dimen/_10sdp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Hiển thị"
+                android:textColor="#0F0F0F"
+                android:textSize="@dimen/_18sdp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <RadioGroup
+                android:layout_marginRight="@dimen/_5sdp"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:weightSum="3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:padding="@dimen/_5sdp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textSize="@dimen/_16sdp"
+                    android:background="@drawable/custom_bottom2"
+                    android:id="@+id/radio_a"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:button="@null"
+                    android:text="Nam" />
+
+                <RadioButton
+                    android:padding="@dimen/_5sdp"
+                    android:gravity="center"
+                    android:textSize="@dimen/_16sdp"
+                    android:background="@drawable/custom_radio"
+                    android:layout_weight="1"
+                    android:id="@+id/radio_b"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:button="@null"
+                    android:checked="true"
+                    android:text="Nữ" />
+
+                <RadioButton
+                    android:padding="@dimen/_5sdp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textSize="@dimen/_16sdp"
+                    android:background="@drawable/custom_bottom3"
+                    android:id="@+id/radio_c"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:button="@null"
+                    android:text="Cả hai" />
+            </RadioGroup>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginLeft="@dimen/_5sdp"
+        android:layout_marginRight="@dimen/_5sdp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:orientation="vertical"
+        android:weightSum="2">
+
+        <LinearLayout
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <LinearLayout
+
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Tuổi"
+                    android:textColor="#0F0F0F"
+                    android:textSize="@dimen/_18sdp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_gravity="center"
+                android:gravity="right"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+                <TextView
+                    android:id="@+id/textMin1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="18 "
+                    android:textSize="@dimen/_14sdp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="-"
+                    android:textSize="@dimen/_14sdp" />
+                <TextView
+                    android:id="@+id/textMax1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" 20"
+                    android:textSize="@dimen/_14sdp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2">
+
+            <io.apptik.widget.MultiSlider
+                app:thumbNumber="2"
+                app:drawThumbsApart="true"
+                app:data_type="_integer"
+                android:thumb="@drawable/custom_rangeseekbar"
+                app:bar_highlight_color="#fc826d"
+                android:id="@+id/age_slider"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:layout_marginLeft="@dimen/_5sdp"
+        android:layout_marginRight="@dimen/_5sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <LinearLayout
+
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Khoảng cách"
+                android:textColor="#0F0F0F"
+                android:textSize="@dimen/_18sdp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_gravity="center"
+            android:gravity="right"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+            <TextView
+                android:id="@+id/khoangcach"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="50 km"
+                android:textSize="@dimen/_14sdp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginLeft="@dimen/_5sdp"
+        android:layout_marginRight="@dimen/_5sdp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <io.apptik.widget.MultiSlider
+            app:thumbNumber="2"
+            app:drawThumbsApart="true"
+            app:data_type="_integer"
+            android:thumb="@drawable/custom_rangeseekbar"
+            app:bar_highlight_color="#fc826d"
+            android:id="@+id/rangeSeekbar_khoangcach"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="@dimen/_20sdp"
+        android:paddingLeft="@dimen/_30sdp"
+        android:paddingRight="@dimen/_30sdp"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/custom_rangeseekbar"
+            android:text="Áp dụng" />
+    </LinearLayout>
+
+
+</LinearLayout>

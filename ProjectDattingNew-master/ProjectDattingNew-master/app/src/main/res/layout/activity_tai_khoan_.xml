@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical">
+    <LinearLayout
+        android:background="#ffff"
+        android:id="@+id/info"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="horizontal"
+        android:weightSum="10"
+   >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/quaylai" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="7"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tài khoản"
+                android:textColor="#000000"
+                android:textSize="24sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2">
+            <TextView
+                android:textColor="#f96e91"
+                android:textSize="20sp"
+                android:id="@+id/save_user"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lưu" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/thanhngang"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/info"
+        android:background="#000000"
+     />
+    <RelativeLayout
+        android:layout_margin="@dimen/_10sdp"
+        android:id="@+id/taikhoan"
+        android:layout_below="@id/thanhngang"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+     <TextView
+         android:id="@+id/hoten"
+         android:textSize="@dimen/_16sdp"
+         android:text="họ tên"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"/>
+        <EditText
+            android:id="@+id/hoten_edit"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_below="@id/hoten"
+            android:hint="Nguyễn Hiếu THành"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_margin="@dimen/_10sdp"
+        android:id="@+id/ngaysinh_layout"
+        android:layout_below="@id/taikhoan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/ngaysinh_text"
+            android:textSize="@dimen/_16sdp"
+            android:text="ngày sinh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:id="@+id/ngaysinh_edit"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_below="@id/ngaysinh_text"
+            android:hint="21/10/1999"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_margin="@dimen/_10sdp"
+        android:id="@+id/gioitinh_layout"
+        android:layout_below="@id/ngaysinh_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/gioitinh_text"
+            android:textSize="@dimen/_16sdp"
+            android:text="Giới tính"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+       <RadioGroup
+           android:layout_margin="@dimen/_20sdp"
+           android:weightSum="2"
+           android:orientation="horizontal"
+           android:layout_below="@id/gioitinh_text"
+           android:id="@+id/group_gioitinh"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content">
+           <RadioButton
+               android:layout_weight="1"
+               android:textSize="@dimen/_18sdp"
+               android:text="Nam"
+               android:id="@+id/man"
+               android:layout_width="0dp"
+               android:layout_height="wrap_content"/>
+           <RadioButton
+               android:checked="true"
+               android:layout_weight="1"
+               android:textSize="@dimen/_18sdp"
+               android:text="Nữ"
+               android:id="@+id/woman"
+               android:layout_width="0dp"
+               android:layout_height="wrap_content"/>
+
+       </RadioGroup>
+    </RelativeLayout>
+
+</RelativeLayout>

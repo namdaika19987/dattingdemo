@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+        <RelativeLayout
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/image_home"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/nhunglon" />
+
+            <TextView
+                android:gravity="center"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginTop="5dp"
+                android:layout_below="@id/image_home"
+                android:text="hiếu thành"
+                android:id="@+id/name_home"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"/>
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_marginTop="@dimen/_10sdp"
+                android:id="@+id/image_status"
+                android:layout_width="8dp"
+                android:layout_height="8dp"
+                android:src="@drawable/online"
+                android:layout_below="@id/image_home"
+                android:layout_toRightOf="@id/name_home"
+                />
+
+        </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    android:weightSum="20">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="@dimen/_60sdp"
+        android:orientation="horizontal"
+        android:weightSum="5">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:orientation="horizontal">
+
+            <TextView
+                android:paddingLeft="10dp"
+                android:layout_gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hồ sơ"
+                android:textColor="#000000"
+                android:textSize="38sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+            <ImageView
+                android:id="@+id/settings"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/caidat" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/rela1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:layout_marginBottom="10dp"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/image_hoso"
+            android:layout_below="@id/rela1"
+            app:riv_corner_radius="@dimen/_100sdp"
+            android:scaleType="centerCrop"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:src="@drawable/nhung4"
+            android:layout_marginTop="@dimen/_5sdp"
+            tools:ignore="NotSibling" />
+
+        <RelativeLayout
+            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_below="@id/image_hoso"
+            android:id="@+id/user_infor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+                    <TextView
+
+                        android:layout_centerHorizontal="true"
+                        android:layout_below="@id/user_infor"
+                        android:id="@+id/user_hoso"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Hiếu Thành"
+                        android:textColor="#000000"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        tools:ignore="NotSibling" />
+
+                    <TextView
+                        android:id="@+id/dauphay3"
+                        android:layout_toRightOf="@id/user_hoso"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=","
+                        android:textColor="#000000"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/age_hoso"
+                        android:layout_toRightOf="@id/dauphay3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="18"
+                        android:textColor="#000000"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+            <RelativeLayout
+                android:layout_below="@id/age_hoso"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+                <TextView
+                    android:id="@+id/information"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="Chọn ảnh để xem hồ sơ của bạn"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:id="@+id/muacre"
+            android:layout_below="@id/rela1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:id="@+id/image_1"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:src="@drawable/credit"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"/>
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="40dp"
+                    android:src="@drawable/daucong"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_marginTop="@dimen/_13sdp"
+                android:layout_toRightOf="@id/image_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_marginLeft="10dp"
+                    android:textColor="#F000"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:text="Mua credit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </RelativeLayout>
+        </RelativeLayout>
+        <TextView
+            android:layout_marginRight="50dp"
+            android:layout_marginLeft="90dp"
+            android:background="#e6e6e6"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+
+            <RelativeLayout
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_below="@id/muacre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <RelativeLayout
+                    android:id="@+id/image_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:src="@drawable/gold"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"/>
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="40dp"
+                        android:src="@drawable/daucong"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"/>
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_toRightOf="@id/image_2"
+                    android:layout_marginTop="@dimen/_13sdp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:textColor="#F000"
+                        android:textStyle="bold"
+                        android:textSize="16sp"
+                        android:layout_gravity="center_vertical"
+                        android:text="Kích hoạt Dating Gold"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                </RelativeLayout>
+        </RelativeLayout>
+</RelativeLayout>
+</LinearLayout>

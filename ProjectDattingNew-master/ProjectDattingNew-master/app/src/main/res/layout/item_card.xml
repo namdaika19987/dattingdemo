@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00000000">
+
+
+    <androidx.cardview.widget.CardView xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/cardview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#00000000"
+        android:foreground="?attr/selectableItemBackground"
+        app:cardCornerRadius="@dimen/_8sdp"
+        app:cardPreventCornerOverlap="false"
+        app:cardUseCompatPadding="true">
+
+
+        <!--layout chung-->
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fillViewport="true">
+
+                <!--  layout anh va layoutmo rong-->
+                <LinearLayout
+                    android:id="@+id/linearlayout_tong"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+
+                        android:id="@+id/image_tinder"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <com.makeramen.roundedimageview.RoundedImageView
+
+                            android:id="@+id/item_image"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:adjustViewBounds="true"
+                            android:scaleType="centerCrop"
+                            app:riv_corner_radius="@dimen/_8sdp" />
+                    </RelativeLayout>
+
+                    <!--  layoutmo rong
+                   -->
+                    <LinearLayout
+                        android:id="@+id/infor_user"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:orientation="vertical"
+                        android:padding="10dp"
+                        android:weightSum="2">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/_5sdp"
+                            android:layout_weight="1"
+                            android:orientation="horizontal"
+                            android:weightSum="2">
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1">
+
+                                <TextView
+                                    android:id="@+id/item_name1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="center"
+                                    android:text="Hieu Thanh"
+                                    android:textColor="#161515"
+                                    android:textSize="22sp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="right"
+                                android:paddingRight="@dimen/_10sdp">
+
+                                <ImageView
+                                    android:id="@+id/xo_layout"
+                                    android:layout_width="@dimen/_20sdp"
+                                    android:layout_height="@dimen/_20sdp"
+                                    android:src="@drawable/ic_share" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="horizontal"
+                            android:weightSum="3">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:id="@+id/item_adress1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginBottom="@dimen/_3sdp"
+                                    android:text="Hà Nội"
+                                    android:textSize="16sp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="50dp"
+                                android:layout_height="20dp"
+                                android:layout_marginLeft="10dp"
+                                android:background="@drawable/custom_gioitinh"
+                                android:orientation="horizontal"
+                                android:weightSum="2">
+
+                                <ImageView
+                                    android:layout_width="12dp"
+                                    android:layout_height="12dp"
+                                    android:layout_gravity="center"
+                                    android:layout_marginLeft="5dp"
+                                    android:background="@drawable/girl1" />
+
+                                <TextView
+                                    android:id="@+id/card_age"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:padding="@dimen/_2sdp"
+                                    android:text="14"
+                                    android:textColor="@android:color/white"
+                                    android:textSize="10sp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <include
+                            layout="@layout/about_me"
+                            android:visibility="gone" />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </ScrollView>
+
+
+            <FrameLayout
+                android:id="@+id/right_overlay"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/overlay_black">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="80dp"
+                    android:src="@drawable/tym" />
+            </FrameLayout>
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="10sp"
+            android:background="@drawable/gradation_black"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:weightSum="10">
+
+            <LinearLayout
+                android:id="@+id/infor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_80sdp"
+                android:layout_weight="4"
+                android:orientation="vertical"
+                android:weightSum="4">
+
+
+                <TextView
+                    android:id="@+id/item_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Hieeus Thành"
+                    android:textColor="@android:color/white"
+                    android:textSize="26sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:weightSum="5">
+
+                    <TextView
+                        android:id="@+id/item_city"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="@dimen/_3sdp"
+                        android:layout_weight="3"
+                        android:gravity="right"
+                        android:text="Ha Noi"
+                        android:textColor="@android:color/white"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="50dp"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/custom_gioitinh"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <ImageView
+                            android:layout_width="12dp"
+                            android:layout_height="12dp"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="5dp"
+                            android:background="@drawable/girl1" />
+
+                        <TextView
+                            android:id="@+id/item_age"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:padding="@dimen/_2sdp"
+                            android:text="14"
+                            android:textColor="@android:color/white"
+                            android:textSize="10sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/left_overlay"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/overlay_black">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="80dp"
+                android:src="@drawable/icon_thoat" />
+        </FrameLayout>
+
+
+        <LinearLayout
+            android:id="@+id/status_tinder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="@dimen/_20sdp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="@dimen/_80sdp"
+                    android:layout_height="@dimen/_70sdp"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/icon_thoat"
+
+                    android:scaleType="centerCrop" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="@dimen/_80sdp"
+                    android:layout_height="@dimen/_70sdp"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/tym"
+                    android:scaleType="centerCrop" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="@dimen/_80sdp"
+                    android:layout_height="@dimen/_70sdp"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/icon_no_tym"
+                    android:scaleType="centerCrop" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

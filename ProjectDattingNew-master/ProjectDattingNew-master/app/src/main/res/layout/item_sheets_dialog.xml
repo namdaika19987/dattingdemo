@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/bottonSheets2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00000000"
+    app:cardCornerRadius="@dimen/_10sdp"
+    app:cardPreventCornerOverlap="false"
+    app:cardUseCompatPadding="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/_50sdp"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/_5sdp"
+        android:paddingTop="5dp"
+        android:paddingRight="@dimen/_5sdp"
+        android:paddingBottom="@dimen/_5sdp">
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/item_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/thanhh"
+            app:riv_corner_radius="@dimen/_10sdp" />
+
+            <LinearLayout
+                android:layout_above="@id/trangthai"
+                android:id="@+id/infor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:orientation="vertical"
+                android:weightSum="4">
+
+
+                <TextView
+                    android:id="@+id/item_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Hieu Thành"
+                    android:textColor="@android:color/white"
+                    android:textSize="26sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:weightSum="5">
+
+                    <TextView
+                        android:layout_marginBottom="@dimen/_3sdp"
+                        android:text="Ha Noi"
+                        android:id="@+id/item_city"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="3"
+                        android:gravity="right"
+                        android:textColor="@android:color/white"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/custom_gioitinh"
+                        android:orientation="horizontal"
+                        android:weightSum="2"
+                        android:layout_width="50dp"
+                        android:layout_height="20dp">
+                        <ImageView
+                            android:layout_marginLeft="5dp"
+                            android:layout_gravity="center"
+                            android:background="@drawable/girl1"
+                            android:layout_width="12dp"
+                            android:layout_height="12dp"/>
+                        <TextView
+                            android:padding="@dimen/_2sdp"
+                            android:id="@+id/item_age"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="14"
+                            android:textColor="@android:color/white"
+                            android:textSize="10sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        <LinearLayout
+            android:layout_alignParentBottom="true"
+            android:id="@+id/trangthai"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="@dimen/_20sdp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="@dimen/_80sdp"
+                    android:layout_height="@dimen/_70sdp"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/icon_thoat"
+
+                    android:scaleType="centerCrop" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="@dimen/_80sdp"
+                    android:layout_height="@dimen/_70sdp"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/tym"
+                    android:scaleType="centerCrop" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="@dimen/_80sdp"
+                    android:layout_height="@dimen/_70sdp"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/icon_no_tym"
+                    android:scaleType="centerCrop" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

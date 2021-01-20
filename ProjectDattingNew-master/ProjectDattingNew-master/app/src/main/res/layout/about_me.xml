@@ -1,0 +1,434 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginTop="@dimen/_10sdp"
+    android:id="@+id/about_me">
+    <RelativeLayout
+        android:id="@+id/about_me2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50sdp">
+            <TextView
+                android:gravity="center_vertical"
+                android:textColor="#181717"
+                android:textSize="@dimen/_20sdp"
+                android:text="Về tôi"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        </RelativeLayout>
+        <com.google.android.flexbox.FlexboxLayout
+            app:flexWrap="wrap"
+            app:alignContent="center"
+            app:alignItems="center"
+
+            android:layout_below="@id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <RelativeLayout
+            android:id="@+id/infor_me"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:background="@drawable/custom_user"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:id="@+id/r_docthan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+
+                    android:drawableStart="@drawable/honnhan3"
+                    android:paddingBottom="@dimen/_5sdp"
+                    android:paddingTop="@dimen/_5sdp"
+                    android:paddingRight="@dimen/_10sdp"
+                    android:paddingLeft="@dimen/_10sdp"
+                    android:textSize="@dimen/_10sdp"
+                    android:text="Độc thân"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:background="@drawable/custom_user"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_toRightOf="@id/r_docthan"
+                android:id="@+id/r_voibame"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:drawableStart="@drawable/noisong3"
+                    android:paddingBottom="@dimen/_5sdp"
+                    android:paddingTop="@dimen/_5sdp"
+                    android:paddingRight="@dimen/_10sdp"
+                    android:paddingLeft="@dimen/_10sdp"
+                    android:textSize="@dimen/_10sdp"
+                    android:text="Với ba me"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:background="@drawable/custom_user"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_toRightOf="@id/r_voibame"
+                android:id="@+id/r_ruou"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:drawableStart="@drawable/ruoubia3"
+                    android:paddingBottom="@dimen/_5sdp"
+                    android:paddingTop="@dimen/_5sdp"
+                    android:paddingRight="@dimen/_10sdp"
+                    android:paddingLeft="@dimen/_10sdp"
+                    android:textSize="@dimen/_10sdp"
+                    android:text="Rượu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:background="@drawable/custom_user"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_below="@id/r_docthan"
+                android:id="@+id/r_chieucao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:drawableStart="@drawable/chieucao3"
+                    android:paddingBottom="@dimen/_5sdp"
+                    android:paddingTop="@dimen/_5sdp"
+                    android:paddingRight="@dimen/_10sdp"
+                    android:paddingLeft="@dimen/_10sdp"
+                    android:textSize="@dimen/_10sdp"
+                    android:text="1.70 cm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:background="@drawable/custom_user"
+                android:layout_below="@id/r_voibame"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_marginLeft="@dimen/_20sdp"
+                android:layout_toRightOf="@id/r_chieucao"
+                android:id="@+id/r_ngonngu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:drawableStart="@drawable/ngonngu3"
+                    android:paddingBottom="@dimen/_5sdp"
+                    android:paddingTop="@dimen/_5sdp"
+                    android:paddingRight="@dimen/_10sdp"
+                    android:paddingLeft="@dimen/_10sdp"
+                    android:textSize="@dimen/_10sdp"
+                    android:text="Tiếng việt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:background="@drawable/custom_user"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_below="@id/r_chieucao"
+                android:id="@+id/r_cannang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:drawableStart="@drawable/cannang3"
+                    android:paddingBottom="@dimen/_5sdp"
+                    android:paddingTop="@dimen/_5sdp"
+                    android:paddingRight="@dimen/_10sdp"
+                    android:paddingLeft="@dimen/_10sdp"
+                    android:textSize="@dimen/_10sdp"
+                    android:text="49 kg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:background="@drawable/custom_user"
+                android:layout_below="@id/r_ngonngu"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_marginLeft="@dimen/_20sdp"
+                android:layout_toRightOf="@id/r_cannang"
+                android:id="@+id/r_honnhan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:drawableStart="@drawable/babe"
+                    android:paddingBottom="@dimen/_5sdp"
+                    android:paddingTop="@dimen/_5sdp"
+                    android:paddingRight="@dimen/_10sdp"
+                    android:paddingLeft="@dimen/_10sdp"
+                    android:textSize="@dimen/_10sdp"
+                    android:text="Một ngày nào đó"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </RelativeLayout>
+        </RelativeLayout>
+        </com.google.android.flexbox.FlexboxLayout>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/image_me"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_below="@id/about_me2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_200sdp">
+        <LinearLayout
+            android:layout_marginTop="@dimen/_10sdp"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_170sdp">
+
+                <com.makeramen.roundedimageview.RoundedImageView
+                    android:scaleType="centerCrop"
+                    android:background="@drawable/nhung3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginRight="@dimen/_5sdp"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_170sdp">
+
+                <com.makeramen.roundedimageview.RoundedImageView
+                    android:scaleType="centerCrop"
+                    android:background="@drawable/nhung5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout
+
+        android:id="@+id/like_me"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_below="@id/image_me"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:id="@+id/so_thich"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50sdp">
+            <TextView
+                android:padding="@dimen/_5sdp"
+                android:textColor="#181717"
+                android:textSize="@dimen/_20sdp"
+                android:text="Yêu thích"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        </RelativeLayout>
+        <com.google.android.flexbox.FlexboxLayout
+            app:flexWrap="wrap"
+            app:alignContent="center"
+            app:alignItems="center"
+            android:layout_below="@id/so_thich"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <RelativeLayout
+            android:background="@drawable/custom_user"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:id="@+id/r_dancer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/_20sdp"
+                android:paddingTop="@dimen/_5sdp"
+                android:paddingRight="@dimen/_20sdp"
+                android:paddingBottom="@dimen/_5sdp"
+                android:text="Dancer"
+                android:textSize="@dimen/_10sdp"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:background="@drawable/custom_user"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_toRightOf="@id/r_dancer"
+            android:id="@+id/r_music"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:paddingBottom="@dimen/_5sdp"
+                android:paddingTop="@dimen/_5sdp"
+                android:paddingRight="@dimen/_20sdp"
+                android:paddingLeft="@dimen/_20sdp"
+                android:textSize="@dimen/_10sdp"
+                android:text="Âm nhạc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:background="@drawable/custom_user"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_toRightOf="@id/r_music"
+            android:id="@+id/r_pinic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:paddingBottom="@dimen/_5sdp"
+                android:paddingTop="@dimen/_5sdp"
+                android:paddingRight="@dimen/_20sdp"
+                android:paddingLeft="@dimen/_20sdp"
+                android:textSize="@dimen/_10sdp"
+                android:text="Du lịch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </RelativeLayout>
+
+
+
+        <RelativeLayout
+            android:background="@drawable/custom_user"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_below="@id/r_dancer"
+            android:id="@+id/r_simwing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/_20sdp"
+                android:paddingTop="@dimen/_5sdp"
+                android:paddingRight="@dimen/_20sdp"
+                android:paddingBottom="@dimen/_5sdp"
+                android:text="Bơi lội"
+                android:textSize="@dimen/_10sdp" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:background="@drawable/custom_user"
+            android:layout_below="@id/r_music"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:layout_toRightOf="@id/r_simwing"
+            android:id="@+id/r_readbook"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:paddingBottom="@dimen/_5sdp"
+                android:paddingTop="@dimen/_5sdp"
+                android:paddingRight="@dimen/_20sdp"
+                android:paddingLeft="@dimen/_20sdp"
+                android:textSize="@dimen/_10sdp"
+                android:text="Đọc sách"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:background="@drawable/custom_user"
+            android:layout_below="@id/r_pinic"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:layout_toRightOf="@id/r_readbook"
+            android:id="@+id/r_game"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:paddingBottom="@dimen/_5sdp"
+                android:paddingTop="@dimen/_5sdp"
+                android:paddingRight="@dimen/_20sdp"
+                android:paddingLeft="@dimen/_20sdp"
+                android:textSize="@dimen/_10sdp"
+                android:text="Cầu lông"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </RelativeLayout>
+    </RelativeLayout>
+        </com.google.android.flexbox.FlexboxLayout>
+    </RelativeLayout>
+
+
+
+
+    <RelativeLayout
+        android:id="@+id/re_timkiem"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_below="@id/like_me"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:id="@+id/timkiem"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50sdp">
+
+            <TextView
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Tìm kiếm"
+                android:textColor="#181717"
+                android:textSize="@dimen/_20sdp" />
+        </RelativeLayout>
+        <com.google.android.flexbox.FlexboxLayout
+            android:id="@+id/flex"
+            app:flexWrap="wrap"
+            app:alignContent="center"
+            app:alignItems="center"
+            android:layout_below="@id/timkiem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:background="@drawable/custom_user"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:id="@+id/r_banbe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/_20sdp"
+                    android:paddingTop="@dimen/_5sdp"
+                    android:paddingRight="@dimen/_20sdp"
+                    android:paddingBottom="@dimen/_5sdp"
+                    android:text="Bạn bè"
+                    android:textSize="@dimen/_10sdp" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+        </com.google.android.flexbox.FlexboxLayout>
+        <RelativeLayout
+            android:layout_marginTop="70dp"
+            android:gravity="center"
+            android:layout_below="@id/flex"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="8dp"
+                android:text="Khóa hoặc tố giác"
+                android:textSize="@dimen/_14sdp" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

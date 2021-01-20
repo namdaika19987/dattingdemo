@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android">
+    //tịnh tiến một view dọc theo trục x hoặc trục y.
+    <translate
+        android:fromXDelta="50%"
+        android:fromYDelta="0%"
+        android:duration="1500"
+        />
+    //thay đổi độ trong suốt của một view. Android Animation được sử dụng
+    //để cung cấp cho giao diện người dùng một giao diện phong phú.
+    //tăng giá trị từ 0.1 ->1
+    <alpha
+        android:fromAlpha="0.0"
+        android:toAlpha="1.0"
+        android:duration="1500"
+        />
+</set>

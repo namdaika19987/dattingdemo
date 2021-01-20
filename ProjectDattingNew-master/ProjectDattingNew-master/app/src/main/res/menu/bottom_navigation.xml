@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_home"
+        android:icon="@drawable/compass3"
+        android:title="" />
+    <item
+        android:id="@+id/nav_meet"
+        android:icon="@drawable/picture3"
+        android:title="" />
+    <item
+        android:id="@+id/nav_chat"
+        android:icon="@drawable/chat3"
+        android:title="" />
+    <item
+        android:id="@+id/nav_user"
+        android:icon="@drawable/user3"
+        android:title="" />
+</menu>

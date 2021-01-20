@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">#fff</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowLightStatusBar">true</item>
+    </style>
+
+    <style name="AppTheme2" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">#fff</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowLightStatusBar">true</item>
+    </style>
+    <style name="Color" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="android:background">#C73A3A</item>
+    </style>
+
+    <style name="BottomSheetDialogTheme" parent="Theme.Design.Light.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/BottomSheetStyle</item>
+    </style>
+    <style name="BottomSheetStyle" parent="Widget.Design.BottomSheet.Modal">
+        <item name="behavior_peekHeight">1000dp</item>
+        <item name="android:background">#00000000</item>
+    </style>
+
+
+    <style name="AppTheme_seek1" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#ff69b4</item>
+        <item name="colorPrimaryDark">#ff69b4</item>
+        <item name="colorAccent">#ff69b4</item>
+        <item name="android:windowLightStatusBar">true</item>
+    </style>
+    <style name="AppTheme_seek2" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#00a691</item>
+        <item name="colorPrimaryDark">#00a691</item>
+        <item name="colorAccent">#00a691</item>
+        <item name="android:windowLightStatusBar">true</item>
+    </style>
+    <style name="AppTheme_ruoubia" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#4a40ff</item>
+        <item name="colorPrimaryDark">#4a40ff</item>
+        <item name="colorAccent">#4a40ff</item>
+        <item name="android:windowLightStatusBar">true</item>
+    </style>
+    <style name="AppTheme_hutthuoc" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#8d18ff</item>
+        <item name="colorPrimaryDark">#8d18ff</item>
+        <item name="colorAccent">#8d18ff</item>
+        <item name="android:windowLightStatusBar">true</item>
+    </style>
+    <style name="AppTheme_ngongu" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#02885a</item>
+        <item name="colorPrimaryDark">#02885a</item>
+        <item name="colorAccent">#02885a</item>
+        <item name="android:windowLightStatusBar">true</item>
+    </style>
+</resources>
